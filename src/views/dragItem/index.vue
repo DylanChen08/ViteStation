@@ -2,6 +2,7 @@
   <section id="drag-container" ref="drag_container">
     <section id="drag" ref="drag" :class="['animate__animated',state.isDragging?'animate__pulse':'']">
       <div>拖拽组件</div>
+      <div><img width="100" height="100" src="@/assets/linabell.jpg" alt=""></div>
       <div>横轴x：{{ state.x !== null ? state.x : '0' }}</div>
       <div>纵轴y：{{ state.y !== null ? state.y : '0' }}</div>
     </section>
@@ -11,8 +12,6 @@
 
 <script lang="ts" setup>
 import 'animate.css';
-import {getCurrentInstance, onMounted, reactive, ref} from "vue";
-
 const {proxy}: any = getCurrentInstance()
 const drag_container = ref('')
 const drag = ref('')
