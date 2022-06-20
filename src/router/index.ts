@@ -1,6 +1,6 @@
 import {createWebHistory, createRouter} from 'vue-router'
 import drag from '@/views/dragItem/index.vue'
-import live from '@/views/liveDemo/index.vue'
+// import live from '@/views/liveDemo/index.vue'
 /**
  * Note: 路由配置项
  *
@@ -30,17 +30,6 @@ export const constantRoutes = [
       {
         path: '/index',
         component: () => import('@/views/dragItem/index.vue'),
-        name: 'drag',
-      }
-    ]
-  },
-  {
-    path: '/live',
-    component: live,
-    children: [
-      {
-        path: '/index',
-        component: () => import('@/views/liveDemo/index.vue'),
         name: 'drag',
       }
     ]

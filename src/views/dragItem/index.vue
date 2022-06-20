@@ -12,7 +12,7 @@
 
 <script lang="ts" setup>
 import 'animate.css';
-const {proxy}: any = getCurrentInstance()
+const {proxy} = getCurrentInstance()
 const drag_container = ref('')
 const drag = ref('')
 const state = reactive({
